@@ -1,0 +1,4 @@
+allowBuilds:
+  tesseract.js: false  # solo opencollective-postinstall
+# Solo instalar versiones publicadas hace al menos 1 día (minutos).
+minimumReleaseAge: 1440

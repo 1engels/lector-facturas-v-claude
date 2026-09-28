@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.tsbuildinfo
+# Generado por scripts/copy-static-assets.mjs
+public/vendor/
+# Generado por scripts/fetch-models.mjs (modelos de IA, cientos de MB)
+public/models/
+# Comprobantes reales para pruebas manuales (no versionar datos de terceros)
+fixtures/private/
+.DS_Store

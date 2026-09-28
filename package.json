@@ -1,0 +1,42 @@
+{
+  "name": "lector-facturas",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:lan": "vite --host --mode https",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "vue-tsc -b",
+    "copy-assets": "node scripts/copy-static-assets.mjs",
+    "postinstall": "node scripts/copy-static-assets.mjs",
+    "fetch-models": "node scripts/fetch-models.mjs"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.3.0",
+    "@paddleocr/paddleocr-js": "^0.4.2",
+    "@tesseract.js-data/spa": "^1.0.0",
+    "comlink": "^4.4.2",
+    "fast-xml-parser": "^5.11.1",
+    "pdfjs-dist": "^6.3.289",
+    "tesseract.js": "^7.0.0",
+    "tesseract.js-core": "^7.0.0",
+    "vue": "^3.5.43",
+    "zod": "^4.6.5",
+    "zxing-wasm": "^3.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "@vitejs/plugin-basic-ssl": "^2.3.0",
+    "@vitejs/plugin-vue": "^6.0.9",
+    "@vue/tsconfig": "^0.9.1",
+    "onnxruntime-web-paddleocr": "npm:onnxruntime-web@1.24.3",
+    "typescript": "^6.0.3",
+    "vite": "^8.3.1",
+    "vitest": "^5.0.2",
+    "vue-tsc": "^3.3.11"
+  }
+}
